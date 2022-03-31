@@ -1,0 +1,116 @@
+
+
+
+.Zero {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url('bg-1.gif ');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: red;
+    padding: 0 8%;
+}
+
+.Zero2 {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url('andromeda-galaxy.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: red;
+    padding: 0 8%;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.list-group-item {
+    color: white;
+    background-color: darkslategray;
+}
+
+
+
+    /* CSS Breadcrumb */
+    .breadcrumb { 
+        list-style: none; 
+        overflow: hidden; 
+        font: 18px Sans-Serif;
+      }
+      .breadcrumb li { 
+        float: left; 
+      }
+      .breadcrumb li a {
+        color: white;
+        text-decoration: none; 
+        padding: 10px 0 10px 65px;
+        background: #212529; /* fallback color */
+        background: #212528e3; 
+        position: relative; 
+        display: block;
+        float: left;
+      }
+      
+      .breadcrumb li a::after { 
+        content: " "; 
+        display: block; 
+        width: 0; 
+        height: 0;
+        border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+        border-bottom: 50px solid transparent;
+        border-left: 30px solid #212528e3;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px; 
+        left: 100%;
+        z-index: 2; 
+      }
+      
+      .breadcrumb li a::before { 
+        content: " "; 
+        display: block; 
+        width: 0; 
+        height: 0;
+        border-top: 50px solid transparent;       
+        border-bottom: 50px solid transparent;
+        border-left: 30px solid black;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px; 
+        margin-left: 1px;
+        left: 100%;
+        z-index: 1; 
+      }
+      .breadcrumb li:first-child a {
+        padding-left: 10px;
+      }
+      .breadcrumb li:nth-child(2) a       { background:        #212528d7 }
+      .breadcrumb li:nth-child(2) a:after { border-left-color: #212528d7 }
+      .breadcrumb li:nth-child(3) a       { background:        #212528bd}
+      .breadcrumb li:nth-child(3) a:after { border-left-color: #212528bd }
+      .breadcrumb li:nth-child(4) a       { background:        #2125289a }
+      .breadcrumb li:nth-child(4) a:after { border-left-color: #2125289a }
+      .breadcrumb li:last-child a {
+        background: transparent !important;
+        color: white;
+        pointer-events: none;
+        cursor: default;
+      }
+      .breadcrumb li:last-child a::after { 
+        border: 0; 
+      }
+      .breadcrumb li a:hover { 
+        background: #21252948; 
+      }
+      .breadcrumb li a:hover:after { 
+        border-left-color: #21252948 !important; 
+      }
